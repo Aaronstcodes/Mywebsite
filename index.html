@@ -1,0 +1,705 @@
+<!DOCTYPE HTML>
+<html>
+	<div class="custom" >
+	<head>
+	<title>Aaron's Portfolio</title>
+	<meta name="title" content="Aaron's portfolio">
+<meta name="description" content="Aaron's portfolio">
+<meta name="keywords" content="Aaron Savin Thomas,Aaron ST,Code,Programming,Aaron,Savin,Thomas,Unity,Vs code,SJBHS,Bangalore">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="author" content="Aaron ST">
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBXfg0zG4G2mcjVI0FEj_yuwwjdZAWptCk",
+    authDomain: "aaronstcodes.firebaseapp.com",
+    databaseURL: "https://aaronstcodes-default-rtdb.firebaseio.com",
+    projectId: "aaronstcodes",
+    storageBucket: "aaronstcodes.appspot.com",
+    messagingSenderId: "362770800282",
+    appId: "1:362770800282:web:1d329299d603ae4eb60923",
+    measurementId: "G-GW2F09JQQE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="https://kit.fontawesome.com/661bd52577.js" crossorigin="anonymous"></script>
+		<link rel="manifest" href="mainfest.json" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+                              <!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1 class="hide">Aaron's Portfolio</h1>
+								<p class="hide">Hello! Welcome to my website!<br></p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro" class="hide">Introduction</a></li>
+								<li><a href="#work" class="hide">Work</a></li>
+								<li><a href="#about" class="hide">About me</a></li>
+								<li><a href="#contact" class="hide">Contact </a></li>
+								<li><a href="#projects" class="hide">Projects</a></li>
+								<li><a href="#certs" class="hide">Certifications</a></li>
+								
+							</ul>
+						</nav>
+					</header>
+				
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major" class="hide" >Intro</h2>
+								<span class="image main"><img src="images/index.jpg" alt="" /></span>
+								<p class="hide">Hi,My Name is Aaron Savin Thomas,I am from India and I love designing websites, write computer programs and furthermore I'm a frontend web developer and I've designed a couple of websites including this one.I also love coding</p>
+								<p class="hide">Hi! . By the way, check out my <a href="#work">awesome work</a> and see who <a href="#about">I am</a>.</p>
+								<ul class="icons">
+									<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+									<li><a href="https://discord.bio/p/aaron0301" class="icon brands fa-discord"><span class="label"></span></a></li>
+									<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+									<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+									<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+								</ul>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major" class="hide">Work</h2>
+								<span class="image main" class="hide"><img src="images/work.jpg" alt="" /></span>
+								<p class="hide">I Make Many Applications for Your Web Browser and also games In Unity and many apps for both IOS and Android.</p>
+								<div id="piechart"></div>
+								<script type="text/javascript">
+                                // Load google charts
+                                google.charts.load('current', {'packages':['corechart']});
+                                google.charts.setOnLoadCallback(drawChart);
+
+                                // Draw the chart and set the chart values
+                                function drawChart() {
+									var data = google.visualization.arrayToDataTable([
+									['Task', '100'],
+									['HTML', 25],
+									['CSS', 15],
+									['Python',15],
+									['C#', 10],
+									['SQL', 10],
+									['Javascript', 35]
+									]);
+
+                                 // Optional; add a title and set the width and height of the chart
+                                 var options = {'title':'The languages I use', 'width':550, 'height':400};
+
+                                  // Display the chart inside the <div> element with id="piechart"
+									var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+									chart.draw(data, options);
+                                }
+							</script>
+								<p class="hide">Hey Check Out Who<a href="#about"> I am</a> If You Want to Contact Me <a href="#contact">Click Here</a></p>
+								<ul class="icons">
+									<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+									<li><a href="https://discord.bio/p/aaron0301" class="icon brands fa-discord"><span class="label"></span></a></li>
+									<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+									<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+									<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+								</ul>
+							</article>
+
+
+					
+						
+						<!-- About -->
+							<article id="about">
+								<h2 class="major" class="hide">About</h2>
+								<h2>Hi, I'm Aaron Savin Thomas! <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
+<img align='right' src="images/giphy.webp" width="230">
+<br/>
+
+
+ Hi 🙋‍♂️,
+ I'm a | Programmer | Video Editor | Developer | Photo Editor(Photoshop) from India.
+
+<br/>
+
+<a href="https://github.com/Aaronstcodes">
+  <img src="https://github-readme-stats.vercel.app/api?username=Aaronstcodes&show_icons=true&theme=radical" alt"Most use languages"/>
+</a>
+<a href="https://github.com/Aaronstcodes">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aaronstcodes&langs_count=98" alt="Languages" />
+</a>
+<a href="https://github.com/Aaron03011">
+  <img src="https://badges.pufler.dev/years/Aaronstcodes" alt="Languages" />
+</a>
+
+<br />
+
+
+<h2 align="center">Visits</h2>
+
+<p align="center"><img src="https://profile-counter.glitch.me/Aaron03011/count.svg" alt="AnhellO :: Visitor's Count" /></p>
+
+<br>
+<br />
+
+<h2>Languages and Tool</h2>
+<p align="center">
+ <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/languages/html.svg" alt="Twitter" style="vertical-align:top; margin:4px">  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/languages/js.svg" alt="Twitter" style="vertical-align:top; margin:4px">  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/tools/bash.svg" alt="Twitter" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/languages/python.svg" alt="Twitter" style="vertical-align:top; margin:4px"> 
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/languages/shell.svg" alt="" style="vertical-align:top; margin:4px"> 
+ </p>
+ <p align="center">
+ <code><a href="https://www.python.org/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"></a></code>
+<code><a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"></a></code>
+<code><a href="https://reactjs.org/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"></a></code>
+<code><a href="https://www.docker.com/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/docker/docker-official.svg"></a></code>
+<br/><br/>
+</p>
+								<ul class="icons" class="hide">
+									<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+									<li><a href="https://discord.bio/p/aaron0301" class="icon brands fa-discord"><span class="label"></span></a></li>
+									<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+									<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+									<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+								</ul>
+							</article>
+						
+						<!-- Projects -->
+							<article id="projects">
+								<h1 class="major" class="hide" >Projects</h1>
+								<span class="image main" class="hide"><img src="images/download.png" alt=""  /></span>
+								<p class="hide">Here are all the past projects that I worked on. Some of these projects were created by using HTML, CSS, JS, Node, Python and other modules. This is a work in progess and more portfolio projects will soon be released. Stay Tuned for that!</p>
+							        <h2 class="major" class="hide">1.Jams Chat</h2>
+								<span class="image main" class="hide"><img src="images/1.png" alt="" /></span>
+								<p class="hide">Jams Chat is a website where you can chat with each other without signing up or logging in <a href="https://jamschat.netlify.app/">Click here</a> to visit it</p>
+								<h2 class="major" class="hide">2.To Do List</h2>
+								<span class="image main" class="hide"><img src="images/Capture.png" alt="" /></span>
+								<p class="hide">A simple to do list you can use <a href="https://to-do-aaron.netlify.app/">Click here</a> to visit it</p>
+								<h2 class="major" class="hide">3.Password Manager</h2>
+								<span class="image main"><img src="images/a.png" alt="" /></span>
+								<p class="hide">You can save and generate passwords for any websites <a href="https://pass-lib.netlify.app/">Click here</a> to visit it</p>
+								<h2 class="major" class="hide">4.Cat Clock</h2>
+								<span class="image main"><img src="images/d.png" alt="" /></span>
+								<p class="hide">A Simple Clock with few extra features <a href="https://clockaaron.netlify.app/">Click here</a> to visit it</p>
+								<h2 class="major" class="hide">5.Weather app</h2>
+								<span class="image main" class="hide"><img src="images/g.png" alt="" /></span>
+								<p class="hide">A simle weather app <a href="https://weatheraaron.netlify.app/">Click here</a> to visit it</p>
+								<h2 class="major" class="hide">6.Calculator</h2>
+								<span class="image main" class="hide"><img src="images/unknown.png" alt="" /></span>
+								<p class="hide">A simle Calculator <a href="https://calculator-aaron.netlify.app">Click here</a> to visit it</p>
+								<h2 class="major" class="hide">7.Flappy Dot</h2>
+								<p class="hide">Flappy Dot(AKA HackathonX winning project) <a href="https://editor.p5js.org/aaronsavagekid/sketches/-xCy1uAo0">Click here</a> to visit it</p>
+								<h2 class="hide">or</h2>
+								<p class="hide">Try it out here on this site press space bar to jump only works on pc</p>
+								<iframe id="Game"src="https://editor.p5js.org/aaronsavagekid/embed/-xCy1uAo0" width="600px" height="500px"></iframe>
+								<h2 class="major" class="hide">8.Climate Chaos</h2>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/KBOrikENtFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>A project built for NPSI Hacks<a href="https://climate-chaos.netlify.app/"> Click here</a> to visit it</p>
+								<h2 class="major" class="hide">9.Pasteriez</h2>
+								<span class="image main" class="hide"><img src="images/Screenshot 2021-08-18 082048.jpg" alt="" /></span>
+                                <p><a  href="https://pastriez.netlify.app">Click Here</a> to visit It</p>
+								<h2 class="major" class="hide">10.Audio Notes</h2>
+								<span class="image main" class="hide"><img src="images/Screenshot 2021-08-20 180149.jpg" alt="" /></span>
+								<p class="hide">Writes What you talk <a href="https://audionotesaaron.netlify.app/">Click here</a> to visit it</p>
+								<h2 class="major" class="hide">11.Video Game sales</h2>
+								<p class="hide">Project for Freecodecamp and made in Codepen <a href="https://cdpn.io/aaron03011/debug/mdmOJEr/NQAzYKaxmPzr">Click here</a> to visit it</p>
+								<iframe src="https://codepen.io/aaron03011/full/mdmOJEr" width="600px" height="600px"></iframe>
+									<p class="hide"><a href="#report">Click here</a> to Report a bug</p>
+								<p class="hide">Hey Check Out Who<a href="#about"> I am</a> If You Want to Contact Me <a href="#contact">Click Here</a></p>
+								<ul class="icons">
+									<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+									<li><a href="https://discord.bio/p/aaron0301" class="icon brands fa-discord"><span class="label"></span></a></li>
+									<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+									<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+									<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+								</ul>
+							</article>
+
+								<!-- Certificates -->
+								<article id="nodisplay">
+										<h2 class="major" class="hide">Certificates</h2>
+						 				<span class="image main"><img src="images/index.jpg" alt="" /></span>
+										<p class="hide">Here are all the Certificates😎.Some of these projects were created by using HTML, CSS, JS, Node, Python and other modules.Hope you like it:)</p>
+										<h3 class="hide">NPSIHACKS Participarion</h3>
+										<span class="image main"><img src="images/Screenshot 2021-08-12 195619.png" alt="" /></span>
+										<h3 class="hide">HackathonX Participarion and Notable Mention</h3>
+                                        <span class="image main"><img src="images/Screenshot 2021-07-13 085531.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085547.png" alt="" /></span>
+										<h3 class="hide">Udemy HTML Certificaate</h3>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085513.png" alt="" /></span>
+										<h3 class="hide">White hat JR certificates</h3>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085408.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085429.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085448.png" alt="" /></span>
+                                        <h3 class="hide">HTML Quiz</h3>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085349.png" alt="" /></span>
+										<h3 class="hide">Google Fundamentals of Digital Marketing</h3>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085333.png" alt="" /></span>
+										<h3 class="hide">Grasshopper Certificatins</h3>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085243.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085258.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 090918.png" alt="" /></span>
+										<h3 class="hide"><a href="http://freecodecamp.org">Freecodecamp.org</a> Certifications</h3>
+                                        <span class="image main"><img src="images/Screenshot 2021-07-13 085226.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085201.png" alt="" /></span>
+										<h3 class="hide">Mimo Certifications</h3>
+										<span class="image main"><img src="images/mmm.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085042.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085123.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 085142.png" alt="" /></span>
+										<span class="image main"><img src="images/Screenshot 2021-07-13 090859.png" alt="" /></span>
+										<ul class="icons">
+											<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+											<li><a href="https://discord.bio/p/aaron0301" class="icon brands fa-discord"><span class="label"></span></a></li>
+											<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+											<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+											<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+										</ul>
+								</article>
+							
+								<article id="certs">
+									<h2 class="major" class="hide">Certificates</h2>
+									<span class="image main"><img src="images/index.jpg" alt="" /></span>
+									<p class="hide">Here are all the Certificates😎.Some of these projects were created by using HTML, CSS, JS, Node, Python and other modules.Hope you like it:)</p>
+									<h3 class="hide">CTY2021</h3>
+									<embed src="certs/aaronsavagekid@gmail.com.pdf" width="350px" height="300px" />
+									<h3 class="hide">NPSIHACKS Participarion</h3>
+									<embed src="certs/npsihacks certs_54-54.pdf" width="350px" height="300px" />
+									<h3 class="hide">HackathonX Participarion and Notable Mention</h3>
+									<embed src="certs/aaron savin thomas (1).pdf" width="350px" height="500px" />
+									<embed src="certs/page-5.pdf" width="350px" height="350px" />
+									<h3 class="hide">Udemy HTML Certificaate</h3>
+									<embed src="certs/UC-da2e13a4-9512-481a-b223-ca934ef805b9.pdf" width="350px" height="350px" />
+									<h3 class="hide">White hat JR certificates</h3>
+								
+									<embed src="certs/67addd07-423f-44e5-b2a3-60139701a33d.pdf" width="350px" height="500px" />
+									
+									<embed src="certs/077bba26-7084-46ba-846d-48734b5196d8.pdf" width="350px" height="500px" />
+									
+									<embed src="certs/cd9ff6c1-b2b8-4ead-8750-07b6740f7332.pdf" width="350px" height="500px" />
+									
+									<h3 class="hide">HTML Quiz</h3>
+									<embed src="certs/Aaron Savin Thomas-265282952.pdf" width="350px" height="350px" />
+									<h3 class="hide">Google Fundamentals of Digital Marketing</h3>
+									<embed src="certs/certificate.pdf" width="350px" height="350px" />
+									<h3 class="hide">Grasshopper Certificatins</h3>
+									<embed src="certs/GrasshopperCodingFundamentalsCertificate.pdf" width="350px" height="350px" />
+									<embed src="certs/GrasshopperCodingFundamentalsIICertificate.pdf" width="350px" height="350px" />
+									<embed src="certs/GrasshopperUsingaCodeEditorCertificate.pdf" width="350px" height="350px" />
+									<h3 class="hide"><a href="http://freecodecamp.org">Freecodecamp.org</a> Certifications</h3>
+									<embed src="certs/png2pdf.pdf" width="350px" height="350px" />
+									<embed src="certs/Screenshot 2021-07-12 092826.pdf" width="350px" height="350px" />
+
+									<h3 class="hide">Mimo Certifications</h3>
+								
+									<embed src="certs/mimo-certificates-42.pdf" width="350px" height="600px" />
+									<embed src="certs/mimo-certificates-29.pdf" width="350px" height="600px" />
+									<embed src="certs/mimo-certificates-49.pdf" width="350px" height="600px" />
+									<embed src="certs/mimo-certificates-31.pdf" width="350px" height="600px" />
+									<embed src="certs/mimo-certificates-32.pdf" width="350px" height="600px" />
+									<h3 class="hide">Unable to view?, <a href="#nodisplay">Click here</a></h3>
+									<ul class="icons">
+										<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+										<li><a href="https://discord.bio/p/aaron0301" class="icon brands fa-discord"><span class="label"></span></a></li>
+										<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+										<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+										<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+									</ul>
+							</article>
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<h3>If you have any project that you want to get started with, or think you need my help,or want to report a bug then get in touch!
+								</h3>
+								<form name="contact" method="POST" data-netlify="true">
+										<p>
+										  <label>Your Name: <input type="text" name="name" /></label>   
+										</p>
+										<p>
+										  <label>Your Email: <input type="email" name="email" /></label>
+										</p>
+										<p>
+										  <label>Your Role: <select name="role[]" multiple>
+											<option value="friend">Friend</option>
+											<option value="family">Family</option>
+											<option value="unknown">Unknown</option>
+											<option value="NOTA">None of the above</option>
+										  </select></label>
+										</p>
+										<p>
+											
+										</p>
+										<p>
+											<label>Images: <input type="file" name="picture" /></label>
+										</p>
+										<p>
+										  <label>Message: <textarea name="message"></textarea></label>
+										  <button type="submit">Send</button>
+										</p>
+										<p>
+											Or
+										</p>
+										<p>
+											Email me at <a href="mailto:aaronsavagekid@gmail.com?body=message">aaronsavagekid@gmail.com</a>
+										</p>	
+								</form>
+								<ul class="icons">
+									<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+									<li><a href="https://discord.bio/p/aaron0301" class="icon brands fa-discord"><span class="label"></span></a></li>
+									<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+									<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+									<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+								</ul>
+							</article>
+                        	<!-- Report -->
+							<article id="report">
+								<h2 class="major">Report</h2>
+								<form name="report" method="POST" data-netlify="true">
+										<p>
+										  <label>Your Name: <input type="text" name="name" /></label>   
+										</p>
+										<p>
+										  <label>Your Email: <input type="email" name="email" /></label>
+										</p>
+										<p>
+										  <label>Projet: <select name="role[]" multiple>
+											<option value="website">This website</option>
+											<option value="meme chat">Meme chat</option>
+											<option value="Password lib">Password Manager</option>
+											<option value="Clock">Cat Clock</option>
+											<option value="To do">To do List</option>
+											<option value="Weather">Weather App</option>
+											<option value="Calculator">Calculator</option>
+											<option value="Flappy Dot">Flappy Dot</option>
+											<option value="Other">Other</option>
+											<option value="NOTA">None of the above</option>
+										  </select></label>
+										</p>
+										<p>
+											<input type="date" id="dueDate" class="taskDate" ng-model="newTaskDate">
+										</p>
+										<p>
+											<label>Images: <input type="file" name="picture" /></label>
+										</p>
+										<p>
+										  <label>Message: <textarea name="message" id="message"></textarea></label>
+										  <button type="submit">Send</button>
+										</p>
+										<p>
+											Or
+										</p>
+										<p>
+											Email me at <a href="mailto:aaronsavagekid@gmail.com?body=message">aaronsavagekid@gmail.com</a>
+										</p>
+								</form>
+								<ul class="icons">
+									<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+									<li><a href="https://discord.bio/p/aaron0301" class="icon brands fa-discord"><span class="label"></span></a></li>
+									<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+									<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+									<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+								</ul>
+							</article>
+                        
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+				
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.youtube.com/channel/UCI3xcS0XceKXKz6WJFWk6Vg" class="icon brands fa-youtube"><span class="label"></span></a></li>
+							<li><a href="https://discord.bio/p/aaronbiodiscord" class="icon brands fa-discord"><span class="label"></span></a></li>
+							<li><a href="https://github.com/aaronstcodes" class="icon brands fa-github"><span class="label"></span></a></li>
+							<li><a href="mailto:aaronsavagekid@gmail.com?body=message" class="icon style2 fa-envelope"><span class="label"></span></a></li>
+							<li><a href="https://codepen.io/aaron03011" class="icon brands fa-codepen"><span class="label"></span></a></li>
+						</ul>
+						<p class="copyright">&copy; Made By Aaron</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		</div>
+		<script> (function() { var v = document.getElementsByClassName("youtube-player"); for (var n = 0; n < v.length; n++) { v[n].onclick = function () { var iframe = document.createElement("iframe"); iframe.setAttribute("src", "//www.youtube.com/embed/" + this.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&rel="+ this.dataset.related +"&controls="+this.dataset.control+"&showinfo=" + this.dataset.info); iframe.setAttribute("frameborder", "0"); iframe.setAttribute("id", "youtube-iframe"); iframe.setAttribute("style", "width: 100%; height: 100%; position: absolute; top: 0; left: 0;"); if (this.dataset.fullscreen == 1){ iframe.setAttribute("allowfullscreen", ""); } while (this.firstChild) { this.removeChild(this.firstChild); } this.appendChild(iframe); }; } })(); </script>
+		
+	</body>
+</html>
